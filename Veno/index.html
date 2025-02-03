@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(forest.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .jumbotron {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Screenshot 2024-11-18 171104.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            padding: 100px 0;
+        }
+        .jumbotron h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .jumbotron p {
+            font-size: 1.25rem;
+        }
+        .btn-light, .btn-secondary {
+            border-radius: 50px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-light:hover, .btn-secondary:hover {
+            background-color: #93eda6;
+        }
+        section {
+            padding: 60px 0;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card-body {
+            padding: 20px;
+            background-color: #263127; /* Ubah warna card body */
+            border-bottom-left-radius: 10px; /* Membuat sudut bawah kiri card body melengkung */
+            border-bottom-right-radius: 10px; /* Membuat sudut bawah kanan card body melengkung */
+        }
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .card-text {
+            font-size: 1rem;
+            color: #000000;
+        }
+        .contact-icons img {
+            width: 50px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+        .contact-icons img:hover {
+            transform: scale(1.1);
+        }
+        .contact-icons p {
+            font-size: 1rem;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Selamat Datang di Portfolio Saya</h1>
+            <p class="lead">Saya adalah seorang pengembang web yang bersemangat dengan pengalaman dalam membangun aplikasi web yang responsif dan dinamis.</p>
+            <p>
+                <a href="#projects" class="btn btn-light my-2">Lihat Proyek Saya</a>
+                <a href="#contact" class="btn btn-secondary my-2">Hubungi Saya</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 style="color: #ffffff; font-family: 'Roboto', sans-serif;">About Me</h2>
+                    <p class="lead" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Saya, Marveyno Pramaditya Maulansyach, adalah siswa SMKN 11 Semarang yang mengambil jurusan Game Interactive Media (GIM). Saya memiliki minat besar dalam pengembangan web, desain game 2D, dan aplikasi Android.</p>
+                    <p style="color: #ffffff; font-family: 'Roboto', sans-serif;"> Sebagai bagian dari upaya meningkatkan kemampuan, saya bergabung dalam kelas industri di Crocodic Studio sebagai Front-End Developer, menghasilkan berbagai karya kreatif yang berorientasi pada detail dan inovasi.​Selain keahlian tersebut, saya juga mahir mengedit foto menggunakan Adobe Lightroom, Adobe Photoshop, dan software grafis lainnya.</p>
+                    <p style="color: #ffffff; font-family: 'Roboto', sans-serif;">Kadang-kadang, saya memperluas keterampilan kreatif saya dengan menciptakan desain 3D di Blender, yang memungkinkan saya untuk menggabungkan elemen visual dua dimensi dan tiga dimensi. Keberagaman kemampuan ini menjadi fondasi bagi saya untuk terus mengembangkan solusi kreatif yang relevan dan menarik.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="WhatsApp Image 2025-01-31 at 13.15.48_6eda85eb.jpg" class="img-fluid rounded" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="mt-5">
+        <div class="container">
+            <h2 style="color: #ffffff; font-family: 'Roboto', sans-serif;">Pendidikan</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Logo SD _ Sekolah Dasar Vector cdr.jpg" class="card-img-top" alt="Pendidikan 1">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Sekolah Dasar</h5>
+                            <p class="card-text" style="color: #ffffff; font-family: 'Roboto', sans-serif;">6 Tahun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot 2025-02-03 102709.png" class="card-img-top" alt="Pendidikan 2">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Sekolah Menengah Pertama</h5>
+                            <p class="card-text" style="color: #ffffff; font-family: 'Roboto', sans-serif;">3 Tahun</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot 2025-02-03 102747.png" class="card-img-top" alt="Pendidikan 3">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Sekolah Menengah Atas</h5>
+                            <p class="card-text" style="color: #ffffff; font-family: 'Roboto', sans-serif;">3 Tahun</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="mt-5">
+        <div class="container">
+            <h2 style="color: #ffffff; font-family: 'Roboto', sans-serif;">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot 2024-09-12 191747.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Project 1</h5>
+                            <p class="card-text" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Brief description of project 1.</p>
+                            <a href="projects.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot 2024-09-12 192846.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Project 2</h5>
+                            <p class="card-text" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Brief description of project 2.</p>
+                            <a href="projects.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot 2024-11-26 134759.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Project 3</h5>
+                            <p class="card-text" style="color: #ffffff; font-family: 'Roboto', sans-serif;">Brief description of project 3.</p>
+                            <a href="projects.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="mt-5">
+        <div class="container">
+            <h2 style="color: #ffffff; font-family: 'Roboto', sans-serif;">Contact</h2>
+            <div class="row justify-content-center contact-icons">
+                <div class="col-md-4 text-center">
+                    <a href="https://wa.me/6281229923834" target="_blank">
+                        <img src="Icônes de Whatsapp en téléchargement gratuit.jpg" class="img-fluid" alt="WhatsApp">
+                        <p style="color: #ffffff; font-family: 'Roboto', sans-serif;">WhatsApp</p>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://www.instagram.com/lanzz_ch?igsh=aW15Njc4ejI0cWsx" target="_blank">
+                        <img src="76d2cf33-2fe6-4951-81ec-c279531c9b3d.jpg" class="img-fluid" alt="Instagram">
+                        <p style="color: #ffffff; font-family: 'Roboto', sans-serif;">Instagram</p>
+                    </a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="mailto:marveynopramaditya@gmail.com">
+                        <img src="Gmail.jpg" class="img-fluid" alt="Email">
+                        <p style="color: #ffffff; font-family: 'Roboto', sans-serif;">Email</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
